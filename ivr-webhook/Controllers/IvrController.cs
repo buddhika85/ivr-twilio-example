@@ -1,9 +1,8 @@
 ﻿using ivr_webhook.Helpers;
-using System;
-using System.Threading;
-using System.Web.Mvc;
 using ivr_webhook.Models;
-using Twilio;
+using System;
+using System.Collections.Generic;
+using System.Web.Mvc;
 using Twilio.AspNet.Mvc;
 using Twilio.TwiML;
 using Twilio.TwiML.Voice;
@@ -15,217 +14,143 @@ namespace ivr_webhook.Controllers
     // https://www.twilio.com/console/voice/recordings/recording-logs
     public class IvrController : TwilioController
     {
+        public static string NgRokPath { get; } = " https://5b2491ec.ngrok.io/Ivr";
+
+        public FlowExecutionData FlowExecutionData { get; set; }
+
+        public IvrController()
+        {
+            FlowExecutionData =  new FlowExecutionData();
+        }
+
         // GET: IVR
         public ActionResult Index()
         {
             return View();
         }
-
-        //[HttpPost]
-        //public TwiMLResult Welcome()
-        //{
-        //    var response = new VoiceResponse();
-        //    try
-        //    {
-        //        response.Say("Please say your user Id, example ABC123, \n and press star when done", Say.VoiceEnum.Alice, null, Say.LanguageEnum.EnGb);
-        //        // record and transcribe users voice 
-        //        // https://www.twilio.com/docs/voice/twiml/record?code-sample=code-record-a-voicemail&code-language=C%23&code-sdk-version=5.x
-        //        response.Record(
-        //            transcribe: true,
-        //            transcribeCallback: new Uri("https://35eb31e3.ngrok.io/Ivr/HandleRecordedVrn"),
-        //            finishOnKey: "*");
-        //        response.Say("I did not receive a recording");
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        ErrorLog.LogError(e, "Error within ivr/Welcome");
-        //        response = RejectCall();
-        //    }
-
-        //    return TwiML(response);
-        //}
-
+        
+        /// <summary>
+        /// Get VRN
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult Welcome()
         {
             var response = new VoiceResponse();
             try
             {
-                response.Say("Please say \n", Say.VoiceEnum.Alice, 1, Say.LanguageEnum.EnGb);
-                // record and transcribe users voice 		
-                response.Record(
-                    //timeout: 30,
-                    //maxLength: 30,
-                    playBeep: true,
-                    action: new Uri("http://8949de9d.ngrok.io/Ivr/RecordingCompleted"),
-                    transcribe: true,
-                    transcribeCallback: new Uri("http://8949de9d.ngrok.io/Ivr/HandleTranscribedVrn"),
+                var gatherOptionsList = new List<Gather.InputEnum>
+                {
+                    Gather.InputEnum.Speech,    // Speech input
+                    //Gather.InputEnum.Dtmf
+                };
 
-                    finishOnKey: "*");
+                var gather = new Gather(
+                    input: gatherOptionsList,
+                    hints: "A, B, C, D,E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, one, two, three, four, five, size, seven, eight, nine, zero",   // 0,1,2,3,4,5,6,7,8,9
+                    speechTimeout: "Auto",
+                    finishOnKey:"*",
+                    language: ConversationHelper.GatherLanguage,
+                    action: Url.ActionUri("OnVrnGatherComplete", "Ivr")    // will be called automaticaly when transcription is ready 
+                    );
+                gather.Say(ConversationHelper.InputVrn, ConversationHelper.SpeakVoice, 1, ConversationHelper.SpeakLanguage);
+                response.Append(gather);
 
-                response.Say("I did not receive a recording");
-
-                //string uri = new Uri("http://8949de9d.ngrok.io/Ivr/HandleTranscribedVrn").AbsoluteUri;
-                //return Content(string.Format("<?xml version=\"1.0\" encoding=\"UTF-8\"?><Response><Say>Record your message at the beep</Say><Record maxLength=\"60\" timeout=\"10\" transcribeCallback=\"{0}\" transcribe=\"true\"/></Response>", uri));
+                var say = new Say(ConversationHelper.NothingReceived, ConversationHelper.SpeakVoice, 1, ConversationHelper.SpeakLanguage);
+                response.Append(say);
             }
             catch (Exception e)
             {
                 ErrorLog.LogError(e, "Error within ivr/Welcome");
-                //response = RejectCall();
-                return Content("<?xml version=\"1.0\" encoding=\"UTF-8\"?><Response><Say>exception</Say></Response>");
-            }
-
-            return TwiML(response);
-        }
-
-        [HttpPost]
-        public TwiMLResult RecordingCompleted()
-        {
-            var response = new VoiceResponse();
-            try
-            {
-                var RecordingSid = Request.Params["RecordingSid"];
-                var Status = Request.Params["CallStatus"];
-                var Duration = int.Parse(Request.Params["RecordingDuration"]);
-                var Url = Request.Params["RecordingUrl"];
-
-                // reading the transcibed result
-                response.Say("Recoding Completed. You said, \n");
-                response.Play(new Uri(Url));
-            }
-            catch (Exception e)
-            {
-                ErrorLog.LogError(e, "Error within ivr/RecordingCompleted");
-                response.Say(ConversationHelper.NothingReceived, ConversationHelper.SpeakVoice, 1, ConversationHelper.SpeakLanguage);
-            }
-            return TwiML(response);
-        }
-
-
-        //https://www.twilio.com/docs/voice/tutorials/ivr-screening-csharp-mvc
-        [HttpPost]
-        public TwiMLResult HandleTranscribedVrn()
-        {
-            var response = new VoiceResponse();
-            try
-            {
-                // get the transcribed result - https://www.twilio.com/docs/voice/twiml/record#transcribe
-                var result = new TranscribedResult
-                {
-                    TranscriptionSid = Request.Params["TranscriptionSid"],
-                    TranscriptionText = Request.Params["TranscriptionText"],
-                    TranscriptionUrl = Request.Params["TranscriptionUrl"],
-                    TranscriptionStatus = Request.Params["TranscriptionStatus"],
-                    RecordingSid = Request.Params["RecordingSid"],
-                    RecordingUrl = Request.Params["RecordingUrl"],
-                    AccountSid = Request.Params["AccountSid"]
-                };
-
-           
-                response.Say($"Transcribed message is,\n {result.TranscriptionText}");
-                
-                // done
-                response.Say("Good Bye", Say.VoiceEnum.Alice, null, Say.LanguageEnum.EnGb);
-            }
-            catch (Exception e)
-            {
-                ErrorLog.LogError(e, "Error within ivr/HandleTranscribedVrn");
-                response.Say(ConversationHelper.NothingReceived, ConversationHelper.SpeakVoice, 1, ConversationHelper.SpeakLanguage);
-            }
-
-            response.Hangup();
-            return TwiML(response);
-        }
-
-
-        [HttpPost]
-        public TwiMLResult HandleRecordedVrn()
-        {
-            var response = new VoiceResponse();
-            try
-            {
-                var result = GetTranscribedResult();
-                var message =
-                    $"TranscriptionText = {result.TranscriptionText}";  // , Status = {result.TranscriptionStatus}, RecordingSid = {result.RecordingSid}, RecordingUrl = {result.RecordingUrl}
-                ErrorLog.LogError(new Exception(), message);
-                response.Say($"You said,\n {message}");
-                response.Say(ConversationHelper.Bye);
-                response.Hangup();
-            }
-            catch (Exception e)
-            {
-                ErrorLog.LogError(e, "Error within ivr/HandleRecordedVrn");
                 response = RejectCall();
             }
             return TwiML(response);
         }
 
-        //[HttpPost]
-        //public TwiMLResult HandleTranscribedVrn()
-        //{
-        //    var response = new VoiceResponse();
-        //    try
-        //    {
-        //        // get the transcribed result - https://www.twilio.com/docs/voice/twiml/record#transcribe
-        //        var result = new TranscribedResult
-        //        {
-        //            TranscriptionSid = Request.Params["TranscriptionSid"],
-        //            TranscriptionText = Request.Params["TranscriptionText"],
-        //            TranscriptionUrl = Request.Params["TranscriptionUrl"],
-        //            TranscriptionStatus = Request.Params["TranscriptionStatus"],
-        //            RecordingSid = Request.Params["RecordingSid"],
-        //            RecordingUrl = Request.Params["RecordingUrl"],
-        //            AccountSid = Request.Params["AccountSid"]
-        //        };
-               
-        //        // reading the transcibed result
-        //        response.Say("You said,\n {0}", result.TranscriptionText);
-               
-        //        // done
-        //        response.Say(ConversationHelper.Bye, ConversationHelper.SpeakVoice, 1, ConversationHelper.SpeakLanguage);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        ErrorLog.LogError(e, "Error within ivr/HandleTranscribedVrn");
-        //        response.Say(ConversationHelper.NothingReceived, ConversationHelper.SpeakVoice, 1, ConversationHelper.SpeakLanguage);
-        //    }
-        //    return TwiML(response);
-        //}
-
-        private TranscribedResult GetTranscribedResult()
+        /// <summary>
+        /// On VRN gather complete
+        /// </summary>
+        /// <param name="speechResult"></param>
+        /// <param name="confidence"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public TwiMLResult OnVrnGatherComplete(string speechResult, double confidence)
         {
+            var response = new VoiceResponse();
             try
             {
-                var incomingCall = new TranscribedResult
+                var gatherOptionsList = new List<Gather.InputEnum>
                 {
-                    AccountSid = Request.Params["AccountSid"],
-                    TranscriptionSid = Request.Params["Sid"],
-                    TranscriptionText = Request.Params["TranscriptionText"],
-                    TranscriptionUrl = Request.Params["Uri"],
-                    TranscriptionStatus = Request.Params["Status"],
-                    RecordingSid = Request.Params["RecordingSid"]
-
-
-
-                    //RecordingUrl = Request.Params["RecordingUrl"],
-                    //CallSid = Request.Params["CallSid"],
-                   
-                    //From = Request.Params["From"],
-                    //To = Request.Params["To"],
-                    //CallStatus = Request.Params["CallStatus"],
-                    //ApiVersion = Request.Params["ApiVersion"],
-                    //Direction = Request.Params["Direction"],
-                    //ForwardedFrom = Request.Params["ForwardedFrom"]
+                    Gather.InputEnum.Dtmf
                 };
-                return incomingCall;
+                FlowExecutionData.Vrn = speechResult;
+                var transcript = $"You said, \n {speechResult}, \nTo continue press * on your keypad, \nOr to retry press any other key";
+                var gather = new Gather(
+                    input: gatherOptionsList,
+                    numDigits:1,
+                    language: ConversationHelper.GatherLanguage,
+                    timeout: 5,
+                    action: Url.ActionUri("OnVrnGatherConfirmed", "Ivr")    // will be called automaticaly when transcription is ready 
+                );
+
+                gather.Say(ConversationHelper.InputVrn, ConversationHelper.SpeakVoice, 1, ConversationHelper.SpeakLanguage);
+                response.Append(gather);
+
+                var say = new Say(ConversationHelper.NothingReceived, ConversationHelper.SpeakVoice, 1, ConversationHelper.SpeakLanguage);
+                response.Append(say);
             }
             catch (Exception e)
             {
-                ErrorLog.LogError(e, "Error when converting transcribed text to model class");
-                throw;
+                ErrorLog.LogError(e, "Error within ivr/OnVrnGatherComplete");
+                response = RejectCall();
+            }
+            return TwiML(response);
+        }
+
+        /// <summary>
+        /// Confirm VRN gathered
+        /// </summary>
+        /// <param name="digits"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult OnVrnGatherConfirmed(string digits)
+        {
+           
+            try
+            {
+                if (!string.IsNullOrWhiteSpace(digits))
+                {
+                    digits = digits.Trim();
+                    if (digits == "*")
+                    {
+                        var response = new VoiceResponse();
+                        var say = new Say($"You confirmed your VRN which is {FlowExecutionData.Vrn}, Good Bye",
+                            ConversationHelper.SpeakVoice, 1, ConversationHelper.SpeakLanguage);
+                        response.Append(say);
+                        return TwiML(response);
+                    }
+                    else
+                    {
+                        // get VRN again
+                        return RedirectToAction("Welcome");
+                    }
+                }
+                else
+                {
+                    return RedirectToAction("OnVrnGatherComplete", new { speechResult = FlowExecutionData.Vrn, confidence = 0 });
+                }
+            }
+            catch (Exception e)
+            {
+                return RedirectToAction("OnVrnGatherComplete", new {speechResult = FlowExecutionData.Vrn, confidence = 0});
             }
         }
 
+
+        /// <summary>
+        /// Reject call
+        /// </summary>
+        /// <returns></returns>
         private VoiceResponse RejectCall()
         {
             var response = new VoiceResponse();
