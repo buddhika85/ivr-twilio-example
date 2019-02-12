@@ -396,6 +396,7 @@ namespace ivr_webhook.Controllers
                     Session["VMaker"] as string, Session["VColor"] as string);
                 LogMessage(summary);
                 var say = new Say(summary, ConversationHelper.SpeakVoice, 1, ConversationHelper.SpeakLanguage);
+                say.SsmlProsody(rate: "slow");
                 response.Append(say);
             }
             catch (Exception e)
