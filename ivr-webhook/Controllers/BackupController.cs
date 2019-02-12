@@ -1,12 +1,4 @@
-﻿using ivr_webhook.Helpers;
-using System;
-using System.Threading;
-using System.Web.Mvc;
-using ivr_webhook.Models;
-using Twilio;
-using Twilio.AspNet.Mvc;
-using Twilio.TwiML;
-using Twilio.TwiML.Voice;
+﻿using Twilio.AspNet.Mvc;
 
 namespace ivr_webhook.Controllers
 {

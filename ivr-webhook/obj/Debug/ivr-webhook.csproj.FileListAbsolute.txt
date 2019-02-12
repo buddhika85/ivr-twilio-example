@@ -1,3 +1,9 @@
+D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projects\ivr\ivr-webhook\bin\roslyn\System.IO.Compression.dll
+D:\Projects\ivr\ivr-webhook\bin\roslyn\VBCSCompiler.exe
 D:\Projects\ivr\ivr-webhook\bin\ApplicationInsights.config
 D:\Projects\ivr\ivr-webhook\bin\ivr-webhook.dll.config
 D:\Projects\ivr\ivr-webhook\bin\ivr-webhook.dll
@@ -9,13 +15,9 @@ D:\Projects\ivr\ivr-webhook\bin\roslyn\csi.exe
 D:\Projects\ivr\ivr-webhook\bin\roslyn\csi.exe.config
 D:\Projects\ivr\ivr-webhook\bin\roslyn\csi.rsp
 D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.CodeAnalysis.dll
 D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.VisualBasic.Core.targets
 D:\Projects\ivr\ivr-webhook\bin\roslyn\Microsoft.Win32.Primitives.dll
@@ -25,7 +27,6 @@ D:\Projects\ivr\ivr-webhook\bin\roslyn\System.Console.dll
 D:\Projects\ivr\ivr-webhook\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 D:\Projects\ivr\ivr-webhook\bin\roslyn\System.Diagnostics.Process.dll
 D:\Projects\ivr\ivr-webhook\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\Projects\ivr\ivr-webhook\bin\roslyn\System.IO.Compression.dll
 D:\Projects\ivr\ivr-webhook\bin\roslyn\System.IO.FileSystem.dll
 D:\Projects\ivr\ivr-webhook\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 D:\Projects\ivr\ivr-webhook\bin\roslyn\System.IO.FileSystem.Primitives.dll
@@ -48,7 +49,6 @@ D:\Projects\ivr\ivr-webhook\bin\roslyn\System.Xml.XPath.XDocument.dll
 D:\Projects\ivr\ivr-webhook\bin\roslyn\vbc.exe
 D:\Projects\ivr\ivr-webhook\bin\roslyn\vbc.exe.config
 D:\Projects\ivr\ivr-webhook\bin\roslyn\vbc.rsp
-D:\Projects\ivr\ivr-webhook\bin\roslyn\VBCSCompiler.exe
 D:\Projects\ivr\ivr-webhook\bin\roslyn\VBCSCompiler.exe.config
 D:\Projects\ivr\ivr-webhook\bin\Antlr3.Runtime.dll
 D:\Projects\ivr\ivr-webhook\bin\Elmah.Contrib.Mvc.dll
