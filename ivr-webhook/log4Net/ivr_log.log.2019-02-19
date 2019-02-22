@@ -1,0 +1,120 @@
+2019-02-19 09:22:56,395 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE3e37ce2043cddecff3bccf02605b1639
+2019-02-19 09:24:09,571 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REb3a957aa59c7a41c45dcd9cff652927f
+2019-02-19 09:24:12,379 INFO MonitoringLogger - Inside - TranscriptionGetter
+2019-02-19 09:24:15,051 INFO MonitoringLogger - IBM Transcription- the the the the one 
+2019-02-19 11:13:49,881 INFO MonitoringLogger - Date : 2/19/2019 11:13:49 AM, Caller Id : CAf5b125832fc80401dafe610059427291, Incoming number : +266696687
+2019-02-19 11:13:49,887 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-19 11:13:50,371 INFO MonitoringLogger - Welcome New User
+2019-02-19 11:14:04,434 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-02-19 11:14:20,076 INFO MonitoringLogger - Gathered VRN L18 xqd with confidence 0.6239707
+2019-02-19 11:14:26,015 INFO MonitoringLogger - Confirmed VRN L18 xqd
+2019-02-19 11:14:35,350 INFO MonitoringLogger - Valid Parking Hours request 6
+2019-02-19 11:14:42,410 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 6
+2019-02-19 11:15:27,616 INFO MonitoringLogger - Card Number Confirmed - 1111222233334444
+2019-02-19 11:15:50,792 INFO MonitoringLogger - Card expiry date Confirmed - 1234
+2019-02-19 11:16:10,945 INFO MonitoringLogger - CVV number Confirmed - 777
+2019-02-19 11:16:11,455 ERROR MonitoringLogger - Exception in PaymentController/ProcessPayment
+System.InvalidCastException: Specified cast is not valid.
+   at ivr_webhook.Controllers.PaymentController.ProcessPayment() in D:\Projects\ivr\ivr-webhook\Controllers\PaymentController.cs:line 520
+2019-02-19 17:44:09,606 INFO MonitoringLogger - Date : 2/19/2019 5:44:09 PM, Caller Id : CA7f99f3f621c45baf7fb0f153e5146b7b, Incoming number : +266696687
+2019-02-19 17:44:09,612 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-19 17:44:10,068 INFO MonitoringLogger - Welcome New User
+2019-02-19 17:44:39,468 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-02-19 17:44:52,060 INFO MonitoringLogger - Gathered VRN blankets white with confidence 0.70329636
+2019-02-19 17:44:59,533 INFO MonitoringLogger - Confirmed VRN blankets white
+2019-02-19 17:45:11,275 INFO MonitoringLogger - Valid Parking Hours request 6
+2019-02-19 17:45:17,879 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 6
+2019-02-19 17:45:18,343 INFO MonitoringLogger - Hourly Rate - 12
+2019-02-19 17:45:18,343 INFO MonitoringLogger - Parking Cost - 72
+2019-02-19 17:45:18,343 INFO MonitoringLogger - Park Until- 11:45 PM
+2019-02-19 17:45:59,972 INFO MonitoringLogger - Card Number Confirmed - 1111222233334444
+2019-02-19 17:46:23,516 INFO MonitoringLogger - Card expiry date Confirmed - 1234
+2019-02-19 17:46:46,093 INFO MonitoringLogger - CVV number Confirmed - 888
+2019-02-19 17:46:46,570 ERROR MonitoringLogger - Exception in PaymentController/ProcessPayment
+System.InvalidCastException: Specified cast is not valid.
+   at ivr_webhook.Controllers.PaymentController.ProcessPayment() in D:\Projects\ivr\ivr-webhook\Controllers\PaymentController.cs:line 525
+2019-02-19 17:49:59,521 INFO MonitoringLogger - Date : 2/19/2019 5:49:59 PM, Caller Id : CAf8c71f000ee62540d96b60b6eceb10f3, Incoming number : +266696687
+2019-02-19 17:49:59,527 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-19 17:50:00,032 INFO MonitoringLogger - Welcome New User
+2019-02-19 17:50:13,214 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-02-19 17:50:26,964 INFO MonitoringLogger - Gathered VRN diesel 140 with confidence 0.7569664
+2019-02-19 17:50:32,526 INFO MonitoringLogger - Confirmed VRN diesel 140
+2019-02-19 17:50:40,017 INFO MonitoringLogger - Valid Parking Hours request 6
+2019-02-19 17:50:45,514 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 6
+2019-02-19 17:50:45,972 INFO MonitoringLogger - Hourly Rate - 12
+2019-02-19 17:50:45,972 INFO MonitoringLogger - Parking Cost - 72
+2019-02-19 17:50:45,972 INFO MonitoringLogger - Park Until- 11:50 PM
+2019-02-19 17:51:23,032 INFO MonitoringLogger - Card Number Confirmed - 1111222233334444
+2019-02-19 17:51:48,074 INFO MonitoringLogger - Card expiry date Confirmed - 1234
+2019-02-19 17:52:06,719 INFO MonitoringLogger - CVV number Confirmed - 445
+2019-02-19 17:52:07,185 DEBUG DebugLogger - CallSid = CAf8c71f000ee62540d96b60b6eceb10f3 
+IncomingCallerNumber = +266696687 
+IsRegisteredUser = no 
+LastParkingLocation =  
+RequestedParkingLocation = 1 
+DefaultVrn =  
+CurrentVrn = diesel 140 
+isLimitedParkTime = yes 
+HoursAvailable = 6 
+HoursRequested = 6 
+HoursConfirmed = 6 
+127211:50 PM1111222233334444111122223333444412341234445End of Summary 
+
+2019-02-19 18:11:47,090 INFO MonitoringLogger - Date : 2/19/2019 6:11:47 PM, Caller Id : CA0f7acf183f771ff4479542824b396db9, Incoming number : +266696687
+2019-02-19 18:11:47,096 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-19 18:11:47,599 INFO MonitoringLogger - Welcome New User
+2019-02-19 18:12:02,987 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-02-19 18:12:15,296 INFO MonitoringLogger - Gathered VRN one for the army with confidence 0.30421957
+2019-02-19 18:12:22,477 INFO MonitoringLogger - Confirmed VRN one for the army
+2019-02-19 18:12:32,851 INFO MonitoringLogger - Valid Parking Hours request 5
+2019-02-19 18:12:38,980 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 5
+2019-02-19 18:12:39,443 INFO MonitoringLogger - Hourly Rate - 12
+2019-02-19 18:12:39,443 INFO MonitoringLogger - Parking Cost - 60
+2019-02-19 18:12:39,443 INFO MonitoringLogger - Park Until- 11:12 PM
+2019-02-19 18:13:41,459 INFO MonitoringLogger - Card Number Confirmed - 1111222233334444
+2019-02-19 18:14:07,059 INFO MonitoringLogger - Card expiry date Confirmed - 7777
+2019-02-19 18:14:28,868 INFO MonitoringLogger - CVV number Confirmed - 123
+2019-02-19 18:14:29,350 DEBUG DebugLogger - CallSid = CA0f7acf183f771ff4479542824b396db9 
+IncomingCallerNumber = +266696687 
+IsRegisteredUser = no 
+LastParkingLocation =  
+RequestedParkingLocation = 1 
+DefaultVrn =  
+CurrentVrn = one for the army 
+isLimitedParkTime = yes 
+HoursAvailable = 6 
+HoursRequested = 5 
+HoursConfirmed = 5 
+HourlyRate = 12ParkingCost = 60ParkUntil = 11:12 PMUserDefaultCardEnding = UseDefaultCard = CardNumberEntered = 1111222233334444CardNumberConfirmed = 1111222233334444CardExpiryDateEntered = 7777CardExpiryDateConfirmed = 7777CvvNumbereEntered = CvvNumberConfirmed = 123End of Summary 
+
+2019-02-19 18:22:04,447 INFO MonitoringLogger - Date : 2/19/2019 6:22:04 PM, Caller Id : CA72eb79f525a3270f048812b681f88053, Incoming number : +266696687
+2019-02-19 18:22:04,452 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-19 18:22:04,956 INFO MonitoringLogger - Welcome New User
+2019-02-19 18:22:17,699 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-02-19 18:22:31,234 INFO MonitoringLogger - Gathered VRN 1 p.m. with confidence 0.6636194
+2019-02-19 18:22:35,127 INFO MonitoringLogger - Confirmed VRN 1 p.m.
+2019-02-19 18:22:45,056 INFO MonitoringLogger - Valid Parking Hours request 1
+2019-02-19 18:22:52,173 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 1
+2019-02-19 18:22:52,646 INFO MonitoringLogger - Hourly Rate - 12
+2019-02-19 18:22:52,647 INFO MonitoringLogger - Parking Cost - 12
+2019-02-19 18:22:52,647 INFO MonitoringLogger - Park Until- 7:22 PM
+2019-02-19 18:23:13,031 WARN MonitoringLogger - Invalid Card Number Entry 11111111111111111, buy caller +266696687
+2019-02-19 18:23:37,152 WARN MonitoringLogger - Invalid Card Number Entry 11111111111111111, buy caller +266696687
+2019-02-19 18:24:06,212 WARN MonitoringLogger - Invalid Card Number Entry 77778888666655555, buy caller +266696687
+2019-02-19 18:49:58,872 INFO MonitoringLogger - Date : 2/19/2019 6:49:58 PM, Caller Id : CA4e77962dd596a989caad6938fae2eeb0, Incoming number : +266696687
+2019-02-19 18:49:58,878 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-19 18:49:59,414 INFO MonitoringLogger - Welcome New User
+2019-02-19 18:50:10,950 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-02-19 18:50:28,064 INFO MonitoringLogger - Gathered VRN TV with confidence 0
+2019-02-19 18:50:33,730 INFO MonitoringLogger - Confirmed VRN TV
+2019-02-19 18:50:43,783 INFO MonitoringLogger - Valid Parking Hours request 4
+2019-02-19 18:50:52,067 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 4
+2019-02-19 18:50:52,535 INFO MonitoringLogger - Hourly Rate - 12
+2019-02-19 18:50:52,535 INFO MonitoringLogger - Parking Cost - 48
+2019-02-19 18:50:52,535 INFO MonitoringLogger - Park Until- 10:50 PM
+2019-02-19 18:51:14,418 INFO MonitoringLogger - Card Number Confirmed - 111
+2019-02-19 18:51:30,395 INFO MonitoringLogger - Card expiry date Confirmed - 1234
+2019-02-19 18:51:46,269 INFO MonitoringLogger - CVV number Confirmed - 777
+2019-02-19 18:51:46,738 ERROR MonitoringLogger - Exception in PaymentController/ProcessPayment
+System.InvalidCastException: Specified cast is not valid.
+   at ivr_webhook.Controllers.PaymentController.ProcessPayment() in D:\Projects\ivr\ivr-webhook\Controllers\PaymentController.cs:line 527

@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ivr-webhook", "ivr-webhook\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transcriber", "Transcriber\Transcriber.csproj", "{39188791-C347-489A-AD70-D1F466DEE5D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMvc", "TestMvc\TestMvc.csproj", "{73DB057B-87EF-4FC3-85C9-7A5BECE537D5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{39188791-C347-489A-AD70-D1F466DEE5D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39188791-C347-489A-AD70-D1F466DEE5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39188791-C347-489A-AD70-D1F466DEE5D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{73DB057B-87EF-4FC3-85C9-7A5BECE537D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73DB057B-87EF-4FC3-85C9-7A5BECE537D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73DB057B-87EF-4FC3-85C9-7A5BECE537D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73DB057B-87EF-4FC3-85C9-7A5BECE537D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

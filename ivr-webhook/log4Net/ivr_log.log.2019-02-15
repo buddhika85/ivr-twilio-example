@@ -1,0 +1,122 @@
+2019-02-15 11:23:36,619 INFO MonitoringLogger - Date : 2/15/2019 11:23:36 AM, Caller Id : CAeeb3673edef66375ac494d1c4685be93, Incoming number : +266696687
+2019-02-15 11:23:36,624 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 11:23:37,104 INFO MonitoringLogger - Welcome New User
+2019-02-15 11:24:02,260 INFO MonitoringLogger - Location Code Input Confirmed - 12*
+2019-02-15 11:24:28,644 INFO MonitoringLogger - Gathered VRN 140 MK with confidence 0.5341081
+2019-02-15 11:24:37,504 INFO MonitoringLogger - Confirmed VRN 140 MK
+2019-02-15 11:25:04,555 INFO MonitoringLogger - Date : 2/15/2019 11:25:04 AM, Caller Id : CA4d3cf8eee9d703671ab1e41d9630313d, Incoming number : +266696687
+2019-02-15 11:25:04,556 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 11:25:05,073 INFO MonitoringLogger - Welcome New User
+2019-02-15 11:25:28,405 INFO MonitoringLogger - Location Code Input Confirmed - 12*
+2019-02-15 11:25:42,922 INFO MonitoringLogger - Gathered VRN GU14 png with confidence 0.7123535
+2019-02-15 11:26:05,651 INFO MonitoringLogger - Gathered VRN eu14 TNT with confidence 0.74517184
+2019-02-15 11:26:31,463 INFO MonitoringLogger - Gathered VRN eu14 pnk with confidence 0.855103
+2019-02-15 11:26:55,846 INFO MonitoringLogger - Gathered VRN eu14 pnk with confidence 0.8504018
+2019-02-15 11:27:07,525 INFO MonitoringLogger - Confirmed VRN eu14 pnk
+2019-02-15 11:40:05,803 INFO MonitoringLogger - Date : 2/15/2019 11:40:05 AM, Caller Id : CA91add0303ab53f05355a6bb8117fca5b, Incoming number : +266696687
+2019-02-15 11:40:05,808 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 11:40:06,353 INFO MonitoringLogger - Welcome New User
+2019-02-15 11:40:31,293 INFO MonitoringLogger - Location Code Input Confirmed - 12*
+2019-02-15 11:40:43,338 INFO MonitoringLogger - Gathered VRN l with confidence 0.7496879
+2019-02-15 11:54:29,047 INFO MonitoringLogger - Date : 2/15/2019 11:54:29 AM, Caller Id : CAd6d8faac67a753233921da4da4faf656, Incoming number : +266696687
+2019-02-15 11:54:29,053 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 11:54:29,806 INFO MonitoringLogger - Welcome New User
+2019-02-15 11:54:54,270 INFO MonitoringLogger - Location Code Input Confirmed - 12*
+2019-02-15 11:55:09,881 INFO MonitoringLogger - Gathered VRN eu14 bnk with confidence 0.6510439
+2019-02-15 11:55:35,124 INFO MonitoringLogger - Gathered VRN eu14 bnk with confidence 0.7947572
+2019-02-15 11:55:43,459 INFO MonitoringLogger - Confirmed VRN eu14 bnk
+2019-02-15 11:55:43,760 INFO MonitoringLogger - Summary. 
+ 
+Caller is, Guest. 
+ Location Code is, 1 2 * . 
+V R N is, e u 1 4   b n k . 
+GoodBye
+2019-02-15 12:10:08,919 INFO MonitoringLogger - Date : 2/15/2019 12:10:08 PM, Caller Id : CA259ade1f9136a3e35ca1b15865ab777b, Incoming number : +266696687
+2019-02-15 12:10:08,925 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 12:10:09,469 INFO MonitoringLogger - Welcome New User
+2019-02-15 12:10:33,369 INFO MonitoringLogger - Location Code Input Confirmed - 12*
+2019-02-15 12:12:17,895 INFO MonitoringLogger - Date : 2/15/2019 12:12:17 PM, Caller Id : CAd7ef7a8d7e934400a676f4aa0476b5d1, Incoming number : +266696687
+2019-02-15 12:12:17,901 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 12:12:18,448 INFO MonitoringLogger - Welcome New User
+2019-02-15 12:12:38,511 INFO MonitoringLogger - Location Code Input Confirmed - 1*
+2019-02-15 12:15:24,268 INFO MonitoringLogger - Date : 2/15/2019 12:15:24 PM, Caller Id : CA858d51dbe6fce0bacb72a30e9392f689, Incoming number : +266696687
+2019-02-15 12:15:24,274 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 12:15:24,830 INFO MonitoringLogger - Welcome New User
+2019-02-15 12:15:44,538 INFO MonitoringLogger - Location Code Input Confirmed - 1*
+2019-02-15 12:19:34,961 INFO MonitoringLogger - Date : 2/15/2019 12:19:34 PM, Caller Id : CAbb5c8c39d718443593a43a49225b0077, Incoming number : +266696687
+2019-02-15 12:19:34,967 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 12:19:35,518 INFO MonitoringLogger - Welcome New User
+2019-02-15 12:19:58,708 INFO MonitoringLogger - Location Code Input Confirmed - 1*
+2019-02-15 12:21:34,126 INFO MonitoringLogger - Date : 2/15/2019 12:21:34 PM, Caller Id : CA986b009d9c785e267135924f592dbd20, Incoming number : +266696687
+2019-02-15 12:21:34,132 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 12:21:34,680 INFO MonitoringLogger - Welcome New User
+2019-02-15 12:21:53,313 INFO MonitoringLogger - Location Code Input Confirmed - 1*
+2019-02-15 12:36:42,064 INFO MonitoringLogger - Date : 2/15/2019 12:36:42 PM, Caller Id : CA06a070e395281b53d5651c27802e936c, Incoming number : +266696687
+2019-02-15 12:36:42,070 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 12:36:42,613 INFO MonitoringLogger - Welcome New User
+2019-02-15 12:37:02,484 INFO MonitoringLogger - Location Code Input Confirmed - 1*
+2019-02-15 12:37:20,896 INFO MonitoringLogger - Gathered VRN eu14tnk with confidence 0.969906
+2019-02-15 12:37:48,748 INFO MonitoringLogger - Gathered VRN eu14tnk with confidence 0.969906
+2019-02-15 12:37:56,358 INFO MonitoringLogger - Confirmed VRN eu14tnk
+2019-02-15 12:37:56,875 INFO MonitoringLogger - Summary. 
+ 
+Caller is, Guest. 
+ Location Code is, 1 * . 
+V R N is, e u 1 4 t n k . 
+GoodBye
+2019-02-15 12:40:49,263 INFO MonitoringLogger - Date : 2/15/2019 12:40:49 PM, Caller Id : CAd7d25cf778e6c892f2c2c73924135bb5, Incoming number : +266696687
+2019-02-15 12:40:49,269 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 12:40:49,817 INFO MonitoringLogger - Welcome New User
+2019-02-15 12:41:08,816 INFO MonitoringLogger - Location Code Input Confirmed - 1*
+2019-02-15 12:41:25,714 INFO MonitoringLogger - Gathered VRN eu14 pnk with confidence 0.71996814
+2019-02-15 12:41:53,035 INFO MonitoringLogger - Gathered VRN eu14 pnk with confidence 0.42569533
+2019-02-15 12:42:18,613 INFO MonitoringLogger - Gathered VRN eu14 with confidence 0.531052
+2019-02-15 12:42:20,831 INFO MonitoringLogger - Confirmed VRN eu14
+2019-02-15 12:42:21,263 INFO MonitoringLogger - Summary. 
+ 
+Caller is, Guest. 
+ Location Code is, 1 * . 
+V R N is, e u 1 4 . 
+GoodBye
+2019-02-15 12:43:48,788 INFO MonitoringLogger - Date : 2/15/2019 12:43:48 PM, Caller Id : CA0d66c084eb38cec0703eac40f795b916, Incoming number : +266696687
+2019-02-15 12:43:48,788 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 12:43:49,325 INFO MonitoringLogger - Welcome New User
+2019-02-15 12:44:24,386 INFO MonitoringLogger - Date : 2/15/2019 12:44:24 PM, Caller Id : CAcb971f96896cf11aad37e6decc864ddd, Incoming number : +266696687
+2019-02-15 12:44:24,386 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 12:44:24,908 INFO MonitoringLogger - Welcome New User
+2019-02-15 12:44:46,064 INFO MonitoringLogger - Location Code Input Confirmed - 1*
+2019-02-15 12:45:00,197 INFO MonitoringLogger - Gathered VRN one you X Y with confidence 0.5887525
+2019-02-15 12:45:24,943 INFO MonitoringLogger - Gathered VRN J 1 u x y with confidence 0.68271846
+2019-02-15 12:45:33,214 INFO MonitoringLogger - Confirmed VRN J 1 u x y
+2019-02-15 12:45:33,731 INFO MonitoringLogger - Summary. 
+ 
+Caller is, Guest. 
+ Location Code is, 1 * . 
+V R N is, J   1   u   x   y . 
+GoodBye
+2019-02-15 16:45:39,108 INFO MonitoringLogger - Date : 2/15/2019 4:45:39 PM, Caller Id : CA07ac3462125a38140d79de757ceb712d, Incoming number : +266696687
+2019-02-15 16:45:39,113 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-15 16:45:39,660 INFO MonitoringLogger - Welcome New User
+2019-02-15 16:45:59,489 INFO MonitoringLogger - Location Code Input Confirmed - 1*
+2019-02-15 16:46:16,323 INFO MonitoringLogger - Gathered VRN u 1 4 B N K with confidence 0.5552207
+2019-02-15 16:46:41,902 INFO MonitoringLogger - Gathered VRN eu14 pnk with confidence 0.5225068
+2019-02-15 16:47:10,245 INFO MonitoringLogger - Gathered VRN eu14 pnk with confidence 0.72101045
+2019-02-15 16:47:17,169 INFO MonitoringLogger - Confirmed VRN eu14 pnk
+2019-02-15 16:47:17,698 INFO MonitoringLogger - Summary. 
+ 
+Caller is, Guest. 
+ Location Code is, 1 * . 
+V R N is, e u 1 4   p n k . 
+GoodBye
+2019-02-15 17:04:01,952 INFO MonitoringLogger - Date : 2/15/2019 5:04:01 PM, Caller Id : CA74d1d8485eb6146926a9d396b4831ec2, Incoming number : +442080902543
+2019-02-15 17:04:01,958 INFO MonitoringLogger - +442080902543 - Is Registered - False
+2019-02-15 17:04:02,506 INFO MonitoringLogger - Welcome New User
+2019-02-15 17:04:27,275 INFO MonitoringLogger - Location Code Input Confirmed - 10023*
+2019-02-15 17:04:41,248 INFO MonitoringLogger - Gathered VRN ab12 3 with confidence 0.60578567
+2019-02-15 17:04:47,357 INFO MonitoringLogger - Confirmed VRN ab12 3
+2019-02-15 17:04:47,871 INFO MonitoringLogger - Summary. 
+ 
+Caller is, Guest. 
+ Location Code is, 1 0 0 2 3 * . 
+V R N is, a b 1 2   3 . 
+GoodBye

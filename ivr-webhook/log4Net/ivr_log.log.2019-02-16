@@ -1,0 +1,96 @@
+2019-02-16 19:58:01,643 INFO MonitoringLogger - Date : 2/16/2019 7:58:01 PM, Caller Id : CA10f5e74a4e410778db08d38ca5748112, Incoming number : +266696687
+2019-02-16 19:58:01,649 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-16 19:58:02,160 INFO MonitoringLogger - Welcome New User
+2019-02-16 19:58:25,706 INFO MonitoringLogger - Location Code Input Confirmed - 1*
+2019-02-16 19:58:43,174 INFO MonitoringLogger - Gathered VRN eu14 pnk with confidence 0.7090251
+2019-02-16 19:58:50,342 INFO MonitoringLogger - Confirmed VRN eu14 pnk
+2019-02-16 19:59:11,283 ERROR MonitoringLogger - Exception in ParkTimeController/OnCarParkHoursEntered
+System.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ivr_webhook.Controllers.ParkTimeController.OnCarParkHoursEntered(String digits) in D:\Projects\ivr\ivr-webhook\Controllers\ParkTimeController.cs:line 139
+2019-02-16 20:11:53,724 INFO MonitoringLogger - Date : 2/16/2019 8:11:53 PM, Caller Id : CA0f9a3842002224bdb7f915e178a665c4, Incoming number : +266696687
+2019-02-16 20:11:53,730 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-16 20:11:54,233 INFO MonitoringLogger - Welcome New User
+2019-02-16 20:12:17,578 INFO MonitoringLogger - Location Code Input Confirmed - 4*
+2019-02-16 20:12:34,455 INFO MonitoringLogger - Gathered VRN one for PMT with confidence 0.5126688
+2019-02-16 20:12:59,581 INFO MonitoringLogger - Gathered VRN GU14 TNT with confidence 0.5659062
+2019-02-16 20:13:06,691 INFO MonitoringLogger - Confirmed VRN GU14 TNT
+2019-02-16 20:13:07,169 DEBUG DebugLogger - 
+2019-02-16 20:13:18,552 ERROR MonitoringLogger - Exception in ParkTimeController/OnCarParkHoursEntered
+System.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ivr_webhook.Controllers.ParkTimeController.OnCarParkHoursEntered(String digits) in D:\Projects\ivr\ivr-webhook\Controllers\ParkTimeController.cs:line 139
+2019-02-16 20:18:35,668 INFO MonitoringLogger - Date : 2/16/2019 8:18:35 PM, Caller Id : CAecbcddf707520ce1e0442ae54ef7b8b0, Incoming number : +266696687
+2019-02-16 20:18:35,674 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-16 20:18:36,174 INFO MonitoringLogger - Welcome New User
+2019-02-16 20:18:56,454 INFO MonitoringLogger - Location Code Input Confirmed - 1*
+2019-02-16 20:19:13,614 INFO MonitoringLogger - Gathered VRN eu14 TNT with confidence 0.63818127
+2019-02-16 20:19:20,923 INFO MonitoringLogger - Confirmed VRN eu14 TNT
+2019-02-16 20:19:21,393 DEBUG DebugLogger - 6
+2019-02-16 20:19:21,393 DEBUG DebugLogger - 6
+2019-02-16 20:19:31,944 INFO MonitoringLogger - Valid Parking Hours request 1
+2019-02-16 20:19:32,825 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 1
+2019-02-16 20:19:33,289 INFO MonitoringLogger - Summary. 
+ 
+Caller is, Guest. 
+ Location Code is, 1 * . 
+V R N is, e u 1 4   T N T . 
+GoodBye
+2019-02-16 20:24:30,298 INFO MonitoringLogger - Date : 2/16/2019 8:24:30 PM, Caller Id : CA35d9923b96da239ff9adf357bce4c3bf, Incoming number : +266696687
+2019-02-16 20:24:30,304 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-16 20:24:30,804 INFO MonitoringLogger - Welcome New User
+2019-02-16 20:24:49,261 INFO MonitoringLogger - Location Code Input Confirmed - 7*
+2019-02-16 20:25:06,757 INFO MonitoringLogger - Gathered VRN eu14 bnk with confidence 0.6035599
+2019-02-16 20:25:12,683 INFO MonitoringLogger - Confirmed VRN eu14 bnk
+2019-02-16 20:25:13,165 DEBUG DebugLogger - 6
+2019-02-16 20:25:13,165 DEBUG DebugLogger - 6
+2019-02-16 20:25:23,596 INFO MonitoringLogger - Invalid Hour Request by user - +266696687 , Hours requested by user = 7 > Hours Remaining = 6
+2019-02-16 20:25:29,486 DEBUG DebugLogger - 6
+2019-02-16 20:25:29,486 DEBUG DebugLogger - 6
+2019-02-16 20:25:40,894 INFO MonitoringLogger - Invalid Hour Request by user - +266696687 , Hours requested by user = 8 > Hours Remaining = 6
+2019-02-16 20:25:46,587 DEBUG DebugLogger - 6
+2019-02-16 20:25:46,587 DEBUG DebugLogger - 6
+2019-02-16 20:25:58,978 INFO MonitoringLogger - Valid Parking Hours request 2
+2019-02-16 20:25:59,918 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 2
+2019-02-16 20:31:01,629 INFO MonitoringLogger - Date : 2/16/2019 8:31:01 PM, Caller Id : CA28e6dd06e5ca98d80b0529ed92e2a0aa, Incoming number : +266696687
+2019-02-16 20:31:01,634 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-16 20:31:02,148 INFO MonitoringLogger - Welcome New User
+2019-02-16 20:31:41,223 INFO MonitoringLogger - Date : 2/16/2019 8:31:41 PM, Caller Id : CA06113ab3df5431d56c3ecdf024b7397b, Incoming number : +266696687
+2019-02-16 20:31:41,223 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-16 20:31:41,696 INFO MonitoringLogger - Welcome New User
+2019-02-16 20:32:15,663 INFO MonitoringLogger - Date : 2/16/2019 8:32:15 PM, Caller Id : CAcac7c024bf17841861105a7e9fe0d2e3, Incoming number : +266696687
+2019-02-16 20:32:15,663 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-16 20:32:16,133 INFO MonitoringLogger - Welcome New User
+2019-02-16 20:35:31,389 INFO MonitoringLogger - Date : 2/16/2019 8:35:31 PM, Caller Id : CA6689609dbc7bd4338fdc03c821b35431, Incoming number : +266696687
+2019-02-16 20:35:31,395 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-16 20:35:31,910 INFO MonitoringLogger - Welcome New User
+2019-02-16 20:35:40,662 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-02-16 20:35:56,201 INFO MonitoringLogger - Gathered VRN eu14 pnk with confidence 0.5963389
+2019-02-16 20:36:00,754 INFO MonitoringLogger - Confirmed VRN eu14 pnk
+2019-02-16 20:36:01,223 DEBUG DebugLogger - 6
+2019-02-16 20:36:01,223 DEBUG DebugLogger - 6
+2019-02-16 20:36:09,000 INFO MonitoringLogger - Invalid Hour Request by user - +266696687 , Hours requested by user = 7 > Hours Remaining = 6
+2019-02-16 20:36:14,885 DEBUG DebugLogger - 6
+2019-02-16 20:36:14,885 DEBUG DebugLogger - 6
+2019-02-16 20:36:24,455 INFO MonitoringLogger - Invalid Hour Request by user - +266696687 , Hours requested by user = 8 > Hours Remaining = 6
+2019-02-16 20:36:30,138 DEBUG DebugLogger - 6
+2019-02-16 20:36:30,138 DEBUG DebugLogger - 6
+2019-02-16 20:36:36,963 INFO MonitoringLogger - Valid Parking Hours request 5
+2019-02-16 20:36:37,615 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 5
+2019-02-16 20:39:57,650 INFO MonitoringLogger - Date : 2/16/2019 8:39:57 PM, Caller Id : CAad1f6998c82cf1ac385d7c070c563445, Incoming number : +266696687
+2019-02-16 20:39:57,656 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-02-16 20:39:58,184 INFO MonitoringLogger - Welcome New User
+2019-02-16 20:40:11,205 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-02-16 20:40:26,557 INFO MonitoringLogger - Gathered VRN e u van for TNT with confidence 0.69554704
+2019-02-16 20:40:32,957 INFO MonitoringLogger - Confirmed VRN e u van for TNT
+2019-02-16 20:40:39,776 INFO MonitoringLogger - Invalid Hour Request by user - +266696687 , Hours requested by user = 8 > Hours Remaining = 6
+2019-02-16 20:40:49,715 INFO MonitoringLogger - Invalid Hour Request by user - +266696687 , Hours requested by user = 9 > Hours Remaining = 6
+2019-02-16 20:41:00,477 INFO MonitoringLogger - Invalid Hour Request by user - +266696687 , Hours requested by user = 0
+2019-02-16 20:41:09,916 INFO MonitoringLogger - Valid Parking Hours request 6
+2019-02-16 20:41:10,734 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 6

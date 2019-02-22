@@ -406,18 +406,5 @@ namespace ivr_webhook.Controllers
             }
             return TwiML(response);
         }
-
-        /// <summary>
-        /// Reject call
-        /// </summary>
-        /// <returns></returns>
-        private VoiceResponse RejectCall()
-        {
-            var response = new VoiceResponse();
-            var reject = new Reject("busy");
-            //return Content("<?xml version=\"1.0\" encoding=\"UTF-8\"?><Response><Reject reason=\"busy\" /></Response>");
-            response.Append(reject);
-            return response;
-        }
     }
 }
