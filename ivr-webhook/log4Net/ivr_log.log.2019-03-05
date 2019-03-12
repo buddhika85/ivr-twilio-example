@@ -1,0 +1,10 @@
+2019-03-05 14:03:11,963 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REcb12946d56f256cae90aa712d75d726b
+2019-03-05 14:03:29,927 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE9e7544ceaa4b343ca7bfead6f3eab78a
+2019-03-05 14:05:37,804 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REef5056b856bc9b5a25791dd043579f0b
+2019-03-05 14:07:36,321 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REa98b63f1e0eb2c759573cf5c949d0480
+2019-03-05 14:07:38,106 INFO MonitoringLogger - Inside - TranscriptionGetter
+2019-03-05 14:07:40,873 INFO MonitoringLogger - IBM Transcription- a B. the 
+2019-03-05 14:12:57,666 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE83d73e56b54af637403abf7a6911252d
+2019-03-05 14:15:38,769 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REe22fb83974a075d52ba1930ffbf0af9e
+2019-03-05 14:15:40,575 INFO MonitoringLogger - Inside - TranscriptionGetter
+2019-03-05 14:15:43,113 INFO MonitoringLogger - IBM Transcription- a the the 

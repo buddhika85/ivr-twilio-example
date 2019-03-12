@@ -123,3 +123,5 @@ D:\Projects\ivr\ivr-webhook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatfo
 D:\Projects\ivr\ivr-webhook\obj\Debug\ivr-webhook.csprojResolveAssemblyReference.cache
 D:\Projects\ivr\ivr-webhook\obj\Debug\ivr-webhook.dll
 D:\Projects\ivr\ivr-webhook\obj\Debug\ivr-webhook.pdb
+D:\Projects\ivr\ivr-webhook\bin\IBM.WatsonDeveloperCloud.dll
+D:\Projects\ivr\ivr-webhook\bin\IBM.WatsonDeveloperCloud.SpeechToText.v1.dll

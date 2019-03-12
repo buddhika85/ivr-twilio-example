@@ -52,6 +52,12 @@
     <Reference Include="Elmah.Contrib.Mvc, Version=2.1.5049.27528, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Elmah.Contrib.Mvc.2.1\lib\net45\Elmah.Contrib.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="IBM.WatsonDeveloperCloud, Version=2.16.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IBM.WatsonDeveloperCloud.2.16.0\lib\netstandard1.3\IBM.WatsonDeveloperCloud.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.WatsonDeveloperCloud.SpeechToText.v1, Version=2.16.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IBM.WatsonDeveloperCloud.SpeechToText.v1.2.16.0\lib\netstandard1.3\IBM.WatsonDeveloperCloud.SpeechToText.v1.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
@@ -97,8 +103,8 @@
       <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Net" />
-    <Reference Include="System.Net.Http, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Net.Http.4.1.0\lib\net46\System.Net.Http.dll</HintPath>
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http.Formatting, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Wdc.System.Net.Http.Formatting.NetStandard.1.0.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>

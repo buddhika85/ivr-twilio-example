@@ -1,0 +1,23 @@
+2019-03-12 00:16:01,144 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REe46d1db388878b920507837a656d4e02
+2019-03-12 00:37:44,963 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REda61a68caf663560eef49a9d405f7b88
+2019-03-12 00:37:46,722 ERROR MonitoringLogger - Exception in IvrFlowController/Recorded
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: R. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ivr_webhook.Controllers.IBMWatsonController.Recorded(BodyData bodyData) in D:\Projects\ivr\ivr-webhook\Controllers\IBMWatsonController.cs:line 59
+2019-03-12 23:55:37,344 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REf779a0d9c210219e8aa3a454eccce08a
+2019-03-12 23:55:37,362 ERROR MonitoringLogger - Exception in IvrFlowController/Recorded
+System.Security.VerificationException: Method System.Net.Http.CloneableExtensions.Clone: type argument 'System.Net.Http.Headers.MediaTypeHeaderValue' violates the constraint of type parameter 'T'.
+   at System.Net.Http.Formatting.MediaTypeConstants.get_ApplicationJsonMediaType()
+   at System.Net.Http.Formatting.JsonMediaTypeFormatter..ctor()
+   at System.Net.Http.Formatting.MediaTypeFormatterCollection.CreateDefaultFormatters()
+   at IBM.WatsonDeveloperCloud.Http.WatsonHttpClient..ctor(String baseUri, String userName, String password)
+   at IBM.WatsonDeveloperCloud.Service.WatsonService..ctor(String serviceName, String url)
+   at IBM.WatsonDeveloperCloud.SpeechToText.v1.SpeechToTextService..ctor(TokenOptions options)
+   at ivr_webhook.Controllers.IBMWatsonController.Recorded(BodyData bodyData) in D:\Projects\ivr\ivr-webhook\Controllers\IBMWatsonController.cs:line 67
