@@ -88,7 +88,7 @@ namespace ivr_webhook.Controllers
             }
         }
 
-        
+
 
 
         //[HttpPost]
@@ -105,8 +105,8 @@ namespace ivr_webhook.Controllers
         //        }
 
         //        var payloadUrl = addOns.results.ibm_watson_speechtotext.payload[0].url;
-        //        var accountSid = "ACdfe342ddbecf65b044a7e098180a75e3"; //ConfigurationManager.AppSettings["TwilioAccountSid"];
-        //        var apiKey = "b8fd816074dfd4f4b6a63c1289606cd3";
+        //        var accountSid = "sample";
+        //        var apiKey = "sample";
 
         //        var reqCredentials = Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(accountSid + ":" + apiKey));
         //        var request = (HttpWebRequest)WebRequest.Create(payloadUrl);
