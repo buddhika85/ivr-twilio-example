@@ -253,6 +253,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\BodyData.cs" />
     <Compile Include="Helpers\CustomEnums.cs" />
     <Compile Include="Helpers\DataApiHelper.cs" />
     <Compile Include="Helpers\ConversationHelper.cs" />

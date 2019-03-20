@@ -1,0 +1,312 @@
+2019-03-13 00:03:26,814 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE16407a7b2a72c7cbabc38ca7800b75f6
+2019-03-13 00:03:26,817 ERROR MonitoringLogger - Exception in IvrFlowController/Recorded
+System.Security.VerificationException: Method System.Net.Http.CloneableExtensions.Clone: type argument 'System.Net.Http.Headers.MediaTypeHeaderValue' violates the constraint of type parameter 'T'.
+   at System.Net.Http.Formatting.MediaTypeConstants.get_ApplicationJsonMediaType()
+   at System.Net.Http.Formatting.JsonMediaTypeFormatter..ctor()
+   at System.Net.Http.Formatting.MediaTypeFormatterCollection.CreateDefaultFormatters()
+   at IBM.WatsonDeveloperCloud.Http.WatsonHttpClient..ctor(String baseUri, String userName, String password)
+   at IBM.WatsonDeveloperCloud.Service.WatsonService..ctor(String serviceName, String url)
+   at IBM.WatsonDeveloperCloud.SpeechToText.v1.SpeechToTextService..ctor(TokenOptions options)
+   at ivr_webhook.Controllers.IBMWatsonController.Recorded(BodyData bodyData) in D:\Projects\ivr\ivr-webhook\Controllers\IBMWatsonController.cs:line 67
+2019-03-13 00:05:26,270 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE7615352505187bcdd497fde287f93922
+2019-03-13 00:05:26,290 ERROR MonitoringLogger - Exception in IvrFlowController/Recorded
+System.Security.VerificationException: Method System.Net.Http.CloneableExtensions.Clone: type argument 'System.Net.Http.Headers.MediaTypeHeaderValue' violates the constraint of type parameter 'T'.
+   at System.Net.Http.Formatting.MediaTypeConstants.get_ApplicationJsonMediaType()
+   at System.Net.Http.Formatting.JsonMediaTypeFormatter..ctor()
+   at System.Net.Http.Formatting.MediaTypeFormatterCollection.CreateDefaultFormatters()
+   at IBM.WatsonDeveloperCloud.Http.WatsonHttpClient..ctor(String baseUri, String userName, String password)
+   at IBM.WatsonDeveloperCloud.Service.WatsonService..ctor(String serviceName, String url)
+   at IBM.WatsonDeveloperCloud.SpeechToText.v1.SpeechToTextService..ctor(TokenOptions options)
+   at ivr_webhook.Controllers.IBMWatsonController.Recorded(BodyData bodyData) in D:\Projects\ivr\ivr-webhook\Controllers\IBMWatsonController.cs:line 67
+2019-03-13 00:09:33,015 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REad739d8943541dd1935d75fc9059e1a2
+2019-03-13 00:09:42,047 INFO MonitoringLogger - Confidence : 0.38 
+ Transcript : A. B. C. B. 
+2019-03-13 01:10:29,918 INFO MonitoringLogger - Date : 3/13/2019 1:10:29 AM, Caller Id : CAbe6ff50f643ee048442477f3b7374f91, Incoming number : +266696687
+2019-03-13 01:10:29,923 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 01:10:30,459 INFO MonitoringLogger - Welcome New User
+2019-03-13 01:10:40,190 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-13 01:10:47,566 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-13 01:11:01,781 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REa86c921f26a355d0b5cbb02fa622d812
+2019-03-13 01:11:10,607 INFO MonitoringLogger - IBM Confidence : 0.25 
+ IBM Transcript : A. B. E. 
+2019-03-13 01:11:10,607 INFO MonitoringLogger - Gathered VRN A. B. E.  with confidence 0.25
+2019-03-13 01:11:34,560 INFO MonitoringLogger - Confirmed VRN A. B. E. 
+2019-03-13 01:13:36,038 INFO MonitoringLogger - Date : 3/13/2019 1:13:36 AM, Caller Id : CA522adf1e1d14c075bc5f3e1e2c2488ba, Incoming number : +266696687
+2019-03-13 01:13:36,044 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 01:13:36,484 INFO MonitoringLogger - Welcome New User
+2019-03-13 01:13:45,928 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-13 01:13:54,010 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-13 01:14:08,548 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE96f9e011610329bf96f9299629c1a13f
+2019-03-13 01:14:18,028 INFO MonitoringLogger - IBM Confidence : 0.43 
+ IBM Transcript : eight V. the one 
+2019-03-13 01:14:18,028 INFO MonitoringLogger - Gathered VRN eight V. the one  with confidence 0.43
+2019-03-13 01:16:58,894 INFO MonitoringLogger - Date : 3/13/2019 1:16:58 AM, Caller Id : CA5817ace43e54ebe3d3f3b9d445f5ef0a, Incoming number : +266696687
+2019-03-13 01:16:58,900 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 01:16:59,383 INFO MonitoringLogger - Welcome New User
+2019-03-13 01:17:06,821 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-13 01:17:13,494 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-13 01:17:29,188 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE985c60b63ca353926193ae3b26120f60
+2019-03-13 01:17:38,023 INFO MonitoringLogger - IBM Confidence : 0.32 
+ IBM Transcript : A. D. E. 
+2019-03-13 01:17:38,023 INFO MonitoringLogger - Gathered VRN A. D. E.  with confidence 0.32
+2019-03-13 01:18:18,110 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE4c774d65f9efe199666ba70f079ef9df
+2019-03-13 01:18:22,399 INFO MonitoringLogger - IBM Confidence : 0.84 
+ IBM Transcript : one two three 
+2019-03-13 01:18:22,400 INFO MonitoringLogger - Gathered VRN one two three  with confidence 0.84
+2019-03-13 01:18:56,010 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REe72fad97a021a29b1cbd1d56dcf05dc0
+2019-03-13 01:19:02,569 INFO MonitoringLogger - IBM Confidence : 0.61 
+ IBM Transcript : A. B. C. one two three 
+2019-03-13 01:19:02,569 INFO MonitoringLogger - Gathered VRN A. B. C. one two three  with confidence 0.61
+2019-03-13 01:19:28,171 INFO MonitoringLogger - Confirmed VRN A. B. C. one two three 
+2019-03-13 01:19:36,496 INFO MonitoringLogger - Valid Parking Hours request 4
+2019-03-13 01:19:43,156 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 4
+2019-03-13 01:19:43,627 INFO MonitoringLogger - Hourly Rate - 12
+2019-03-13 01:19:43,627 INFO MonitoringLogger - Parking Cost - 48
+2019-03-13 01:19:43,627 INFO MonitoringLogger - Park Until- 5:19 AM
+2019-03-13 01:20:06,955 INFO MonitoringLogger - Card Number Confirmed - 412
+2019-03-13 01:20:21,225 INFO MonitoringLogger - Card expiry date Confirmed - 4567
+2019-03-13 01:20:34,478 INFO MonitoringLogger - CVV number Confirmed - 777
+2019-03-13 01:20:34,958 INFO MonitoringLogger - 
+
+Processing the payment
+callSid - CA5817ace43e54ebe3d3f3b9d445f5ef0a
+incomingCallerNumber - +266696687
+isRegisteredUser - no
+requestedParkingLocation - 1
+currentVrn - A. B. C. one two three 
+hoursConfirmed - 4
+hourlyRate - 12
+parkingCost - 48
+useDefaultCard - 
+userDefaultCardEnding - 
+cardNumberConfirmed - 412
+cardExpiryDateConfirmed - 4567 
+cvvNumberConfirmed - 777 
+retryPaymentCount - 
+End Payment Information, Stating payment process
+
+
+2019-03-13 01:20:34,959 DEBUG DebugLogger - Summary After the end of the Complete Successful FlowCallSid = CA5817ace43e54ebe3d3f3b9d445f5ef0a 
+IncomingCallerNumber = +266696687 
+IsRegisteredUser = no 
+LastParkingLocation =  
+RequestedParkingLocation = 1 
+DefaultVrn =  
+CurrentVrn = A. B. C. one two three  
+isLimitedParkTime = yes 
+HoursAvailable = 6 
+HoursRequested = 4 
+HoursConfirmed = 4 
+HourlyRate = 12 
+ParkingCost = 48 
+ParkUntil = 5:19 AM 
+UserDefaultCardEnding =  
+UseDefaultCard =  
+CardNumberEntered = 412 
+CardNumberConfirmed = 412 
+CardExpiryDateEntered = 4567 
+CardExpiryDateConfirmed = 4567 
+CvvNumbereEntered = 777 
+CvvNumberConfirmed = 777 
+End of Summary 
+
+2019-03-13 01:20:34,959 INFO MonitoringLogger - Payment Success
+2019-03-13 01:23:51,795 INFO MonitoringLogger - Date : 3/13/2019 1:23:51 AM, Caller Id : CA3b59f90e341929e8c7dc6dc72435f81a, Incoming number : +266696687
+2019-03-13 01:23:51,801 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 01:23:52,309 INFO MonitoringLogger - Welcome New User
+2019-03-13 01:23:59,756 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-13 01:24:06,453 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-13 01:24:21,685 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE9ed76d01e3f380941bd1596cc19fe5e8
+2019-03-13 01:24:30,704 INFO MonitoringLogger - IBM Confidence : 0.56 
+ IBM Transcript : A. B. C. one two three 
+2019-03-13 01:24:30,704 INFO MonitoringLogger - Gathered VRN A. B. C. one two three  with confidence 0.56
+2019-03-13 01:24:56,736 INFO MonitoringLogger - Confirmed VRN A. B. C. one two three 
+2019-03-13 01:25:54,715 INFO MonitoringLogger - Date : 3/13/2019 1:25:54 AM, Caller Id : CA81f689e4f737a5b19b96f42f6735bd90, Incoming number : +266696687
+2019-03-13 01:25:54,715 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 01:25:55,185 INFO MonitoringLogger - Welcome New User
+2019-03-13 01:26:03,048 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-13 01:26:10,207 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-13 01:26:23,936 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE9e798c567a67392cf2fcbb0e6c4a8f01
+2019-03-13 01:26:31,335 INFO MonitoringLogger - IBM Confidence : 0.76 
+ IBM Transcript : me One you X. 
+2019-03-13 01:26:31,335 INFO MonitoringLogger - Gathered VRN me One you X.  with confidence 0.76
+2019-03-13 01:27:05,801 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REfb49aa238023acd5c20de4c59f250ca9
+2019-03-13 01:27:14,009 INFO MonitoringLogger - IBM Confidence : 0.61 
+ IBM Transcript : E. zero one full T. N. T. 
+2019-03-13 01:27:14,009 INFO MonitoringLogger - Gathered VRN E. zero one full T. N. T.  with confidence 0.61
+2019-03-13 01:29:39,418 INFO MonitoringLogger - Date : 3/13/2019 1:29:39 AM, Caller Id : CA4e65f3e8ee68120864cc55693820dd8c, Incoming number : +266696687
+2019-03-13 01:29:39,424 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 01:29:39,930 INFO MonitoringLogger - Welcome New User
+2019-03-13 01:29:44,706 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-13 01:29:54,637 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-13 01:30:08,711 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE4305dac2e5e017352d055f6b0427f39c
+2019-03-13 01:30:18,749 INFO MonitoringLogger - IBM Confidence : 0.48 
+ IBM Transcript : Hey Ron you'll X. 
+2019-03-13 01:30:18,749 INFO MonitoringLogger - Gathered VRN Hey Ron you'll X.  with confidence 0.48
+2019-03-13 01:34:05,920 INFO MonitoringLogger - Date : 3/13/2019 1:34:05 AM, Caller Id : CA67ba6e862554aad1bb14edf2e56f10ee, Incoming number : +266696687
+2019-03-13 01:34:05,920 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 01:34:06,394 INFO MonitoringLogger - Welcome New User
+2019-03-13 01:34:19,096 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1201
+2019-03-13 01:34:27,508 INFO MonitoringLogger - Location Code Input Confirmed - 1201
+2019-03-13 01:34:42,857 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE7ecd06c7dae8968acf52dd06ec4cdfd8
+2019-03-13 01:34:50,767 INFO MonitoringLogger - IBM Confidence : 0.79 
+ IBM Transcript : A. B. C. U. one four 
+2019-03-13 01:34:50,767 INFO MonitoringLogger - Gathered VRN A. B. C. U. one four  with confidence 0.79
+2019-03-13 01:35:34,128 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE6676f190d498afbe5b6278ba0684b0ee
+2019-03-13 01:35:39,869 INFO MonitoringLogger - IBM Confidence : 0.97 
+ IBM Transcript : U. X. seven 
+2019-03-13 01:35:39,869 INFO MonitoringLogger - Gathered VRN U. X. seven  with confidence 0.97
+2019-03-13 01:36:14,943 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE0cd2432cd0196d196afe1b566bee645b
+2019-03-13 01:36:20,019 INFO MonitoringLogger - IBM Confidence : 0.91 
+ IBM Transcript : U. X. one zero seven A. B. 
+2019-03-13 01:36:20,019 INFO MonitoringLogger - Gathered VRN U. X. one zero seven A. B.  with confidence 0.91
+2019-03-13 11:38:12,294 INFO MonitoringLogger - Date : 3/13/2019 11:38:12 AM, Caller Id : CAfc4e627ddba9b08f53048fb93584ba29, Incoming number : +266696687
+2019-03-13 11:38:12,329 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 11:38:12,661 INFO MonitoringLogger - Welcome New User
+2019-03-13 11:38:23,188 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-13 11:38:30,954 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-13 11:38:46,161 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REa6b9a1dbb31aad4dc187f500c62d10a5
+2019-03-13 11:38:58,358 INFO MonitoringLogger - IBM Confidence : 0.46 
+ IBM Transcript : A. P. P. one through three 
+2019-03-13 11:38:58,358 INFO MonitoringLogger - Gathered VRN A. P. P. one through three  with confidence 0.46
+2019-03-13 11:39:17,925 INFO MonitoringLogger - Confirmed VRN A. P. P. one through three 
+2019-03-13 11:39:26,521 INFO MonitoringLogger - Valid Parking Hours request 1
+2019-03-13 11:39:33,204 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 1
+2019-03-13 11:39:33,721 INFO MonitoringLogger - Hourly Rate - 12
+2019-03-13 11:39:33,721 INFO MonitoringLogger - Parking Cost - 12
+2019-03-13 11:39:33,721 INFO MonitoringLogger - Park Until- 12:39 PM
+2019-03-13 11:39:50,398 INFO MonitoringLogger - Card Number Confirmed - 1
+2019-03-13 11:40:01,719 INFO MonitoringLogger - Card expiry date Confirmed - 1
+2019-03-13 11:40:14,701 INFO MonitoringLogger - CVV number Confirmed - 111
+2019-03-13 11:40:14,986 INFO MonitoringLogger - 
+
+Processing the payment
+callSid - CAfc4e627ddba9b08f53048fb93584ba29
+incomingCallerNumber - +266696687
+isRegisteredUser - no
+requestedParkingLocation - 1
+currentVrn - A. P. P. one through three 
+hoursConfirmed - 1
+hourlyRate - 12
+parkingCost - 12
+useDefaultCard - 
+userDefaultCardEnding - 
+cardNumberConfirmed - 1
+cardExpiryDateConfirmed - 1 
+cvvNumberConfirmed - 111 
+retryPaymentCount - 
+End Payment Information, Stating payment process
+
+
+2019-03-13 11:40:14,987 DEBUG DebugLogger - Summary After the end of the Complete Successful FlowCallSid = CAfc4e627ddba9b08f53048fb93584ba29 
+IncomingCallerNumber = +266696687 
+IsRegisteredUser = no 
+LastParkingLocation =  
+RequestedParkingLocation = 1 
+DefaultVrn =  
+CurrentVrn = A. P. P. one through three  
+isLimitedParkTime = yes 
+HoursAvailable = 6 
+HoursRequested = 1 
+HoursConfirmed = 1 
+HourlyRate = 12 
+ParkingCost = 12 
+ParkUntil = 12:39 PM 
+UserDefaultCardEnding =  
+UseDefaultCard =  
+CardNumberEntered = 1 
+CardNumberConfirmed = 1 
+CardExpiryDateEntered = 1 
+CardExpiryDateConfirmed = 1 
+CvvNumbereEntered = 111 
+CvvNumberConfirmed = 111 
+End of Summary 
+
+2019-03-13 11:40:14,987 INFO MonitoringLogger - Payment Success
+2019-03-13 11:47:30,578 INFO MonitoringLogger - Date : 3/13/2019 11:47:30 AM, Caller Id : CA202f7340248a8ec547b4dfd1c0edc303, Incoming number : +266696687
+2019-03-13 11:47:30,578 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 11:47:31,044 INFO MonitoringLogger - Welcome New User
+2019-03-13 11:47:37,246 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-13 11:47:44,159 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-13 11:47:53,741 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE80dc6345c035142f35b77167d47489cc
+2019-03-13 11:47:58,823 ERROR MonitoringLogger - Exception in IvrFlowController/Recorded
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at ivr_webhook.Controllers.VrnController.VrnRecorded(BodyData bodyData) in D:\Projects\ivr\ivr-webhook\Controllers\VrnController.cs:line 292
+2019-03-13 11:48:04,695 INFO MonitoringLogger - Date : 3/13/2019 11:48:04 AM, Caller Id : CA55747a0d1c2e9c2a7e4c2041996077a8, Incoming number : +266696687
+2019-03-13 11:48:04,695 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 11:48:05,148 INFO MonitoringLogger - Welcome New User
+2019-03-13 11:48:11,470 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-13 11:48:16,233 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-13 11:48:30,736 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE438a42eca51a16df5d4954ac14d58e73
+2019-03-13 11:48:37,428 INFO MonitoringLogger - IBM Confidence : 0.34 
+ IBM Transcript : A. B. C. run through 
+2019-03-13 11:48:37,428 INFO MonitoringLogger - Gathered VRN A. B. C. run through  with confidence 0.34
+2019-03-13 15:37:54,498 INFO MonitoringLogger - Date : 3/13/2019 3:37:54 PM, Caller Id : CAb7f869914eec9ba2de89c1f65862a9fa, Incoming number : +442080902543
+2019-03-13 15:37:54,498 INFO MonitoringLogger - +442080902543 - Is Registered - False
+2019-03-13 15:37:55,046 INFO MonitoringLogger - Welcome New User
+2019-03-13 15:38:07,625 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=10023
+2019-03-13 15:38:16,049 INFO MonitoringLogger - Location Code Input Confirmed - 10023
+2019-03-13 15:38:30,235 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE3f7860e2792b2e63d00f8a436fdd6bd2
+2019-03-13 15:38:40,967 INFO MonitoringLogger - IBM Confidence : 0.8 
+ IBM Transcript : %HESITATION you one two X. why is that 
+2019-03-13 15:38:40,967 INFO MonitoringLogger - Gathered VRN %HESITATION you one two X. why is that  with confidence 0.8
+2019-03-13 15:39:15,117 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE81278d6fda4b61b90ce1e3cdef8b1f7d
+2019-03-13 15:39:22,491 INFO MonitoringLogger - IBM Confidence : 0.79 
+ IBM Transcript : %HESITATION you one two X. Y. as it 
+2019-03-13 15:39:22,491 INFO MonitoringLogger - Gathered VRN %HESITATION you one two X. Y. as it  with confidence 0.79
+2019-03-13 16:43:36,568 INFO MonitoringLogger - Date : 3/13/2019 4:43:36 PM, Caller Id : CAd06860eea518734457a771c52bc5100f, Incoming number : +266696687
+2019-03-13 16:43:36,577 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 16:43:36,999 INFO MonitoringLogger - Welcome New User
+2019-03-13 16:43:47,590 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=7
+2019-03-13 16:43:54,336 INFO MonitoringLogger - Location Code Input Confirmed - 7
+2019-03-13 16:45:12,888 INFO MonitoringLogger - Date : 3/13/2019 4:45:12 PM, Caller Id : CAefc35940a32f895042c937e0f5a097ae, Incoming number : +266696687
+2019-03-13 16:45:12,888 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 16:45:13,375 INFO MonitoringLogger - Welcome New User
+2019-03-13 16:45:19,504 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=7
+2019-03-13 16:45:26,028 INFO MonitoringLogger - Location Code Input Confirmed - 7
+2019-03-13 16:46:45,595 INFO MonitoringLogger - Date : 3/13/2019 4:46:45 PM, Caller Id : CA3e137d7636994186a7c14a523e322c8d, Incoming number : +266696687
+2019-03-13 16:46:45,601 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 16:46:58,267 INFO MonitoringLogger - Date : 3/13/2019 4:46:58 PM, Caller Id : CAda92fee06e38c96c18d86dcb7370554c, Incoming number : +266696687
+2019-03-13 16:46:58,267 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 16:46:58,742 INFO MonitoringLogger - Welcome New User
+2019-03-13 16:49:31,247 INFO MonitoringLogger - Date : 3/13/2019 4:49:31 PM, Caller Id : CA13bbd42bd5ae4742c80985a89c5a7fe0, Incoming number : +266696687
+2019-03-13 16:49:31,247 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 16:49:31,722 INFO MonitoringLogger - Welcome New User
+2019-03-13 16:49:37,721 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=7
+2019-03-13 16:49:45,018 INFO MonitoringLogger - Location Code Input Confirmed - 7
+2019-03-13 16:50:01,039 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REf5a94bd8deed168f62dac3c16926d155
+2019-03-13 16:50:14,513 INFO MonitoringLogger - IBM Confidence : 0.46 
+ IBM Transcript : A. B. C. 
+2019-03-13 16:50:14,513 INFO MonitoringLogger - Gathered VRN A. B. C.  with confidence 0.46
+2019-03-13 16:50:54,180 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REd2f33ee5c2d529684b318b704d020d30
+2019-03-13 16:50:59,025 INFO MonitoringLogger - IBM Confidence : 0.7 
+ IBM Transcript : one two three 
+2019-03-13 16:50:59,025 INFO MonitoringLogger - Gathered VRN one two three  with confidence 0.7
+2019-03-13 16:51:28,042 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REa561fde3acded885be7594c3d8f8b516
+2019-03-13 16:51:34,569 INFO MonitoringLogger - IBM Confidence : 0.28 
+ IBM Transcript : on a 
+2019-03-13 16:51:34,569 INFO MonitoringLogger - Gathered VRN on a  with confidence 0.28
+2019-03-13 16:52:10,586 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REf547edd8d25cab6bea5876ee5e2154f7
+2019-03-13 16:52:18,784 INFO MonitoringLogger - IBM Confidence : 0.34 
+ IBM Transcript : A. B. E. 
+2019-03-13 16:52:18,784 INFO MonitoringLogger - Gathered VRN A. B. E.  with confidence 0.34
+2019-03-13 16:53:21,764 INFO MonitoringLogger - Date : 3/13/2019 4:53:21 PM, Caller Id : CA0e71bcb67a8df3ec9c34af33e9948c73, Incoming number : +266696687
+2019-03-13 16:53:21,769 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-13 16:53:22,228 INFO MonitoringLogger - Welcome New User
+2019-03-13 16:53:30,679 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-13 16:53:37,438 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-13 16:53:50,351 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REa975b0ff2c142188b4d685307cd8159d
+2019-03-13 16:53:58,279 INFO MonitoringLogger - IBM Confidence : 0.55 
+ IBM Transcript : A. V. One who 
+2019-03-13 16:53:58,279 INFO MonitoringLogger - Gathered VRN A. V. One who  with confidence 0.55
+2019-03-13 16:54:29,439 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE956278324ae7d8c645458728d3f924c1
+2019-03-13 16:54:34,691 INFO MonitoringLogger - IBM Confidence : 0.71 
+ IBM Transcript : a one B. O. 
+2019-03-13 16:54:34,691 INFO MonitoringLogger - Gathered VRN a one B. O.  with confidence 0.71
+2019-03-13 16:55:05,064 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REdb8d6b5d11d1de04da0f0a11b0351a93
+2019-03-13 16:55:11,607 INFO MonitoringLogger - IBM Confidence : 0.39 
+ IBM Transcript : eight one fi %HESITATION 
+2019-03-13 16:55:11,607 INFO MonitoringLogger - Gathered VRN eight one fi %HESITATION  with confidence 0.39

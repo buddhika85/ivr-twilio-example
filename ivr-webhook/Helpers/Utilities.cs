@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Net;
 
 namespace ivr_webhook.Helpers
 {
@@ -19,6 +21,24 @@ namespace ivr_webhook.Helpers
             catch (Exception e)
             {
                 Log4NetLogger.Error("Exception in Utilities/AddSpaceBetweenChars", e);
+                throw;
+            }
+        }
+
+        public static Stream GetStreamFromUrl(string url)
+        {
+            try
+            {
+                byte[] imageData = null;
+
+                using (var wc = new WebClient())
+                    imageData = wc.DownloadData(url);
+
+                return new MemoryStream(imageData);
+            }
+            catch (Exception e)
+            {
+                Log4NetLogger.Error("Exception in Utilities/GetStreamFromUrl", e);
                 throw;
             }
         }

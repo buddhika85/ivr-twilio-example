@@ -37,10 +37,7 @@ namespace ivr_webhook.Controllers
             }
         }
 
-        public class BodyData
-        {
-            public string RecordingUrl { get; set; }
-        }
+       
 
         [HttpPost]
         public ActionResult Recorded(BodyData bodyData)
@@ -56,17 +53,13 @@ namespace ivr_webhook.Controllers
 
                 TokenOptions iamAssistantTokenOptions = new TokenOptions
                 {
-                    IamApiKey = "5owIqX7QnuEoh8lfKW6w-dE_xIWRSbhpJGwUSoI2ww77",
-                    ServiceUrl = "https://gateway-lon.watsonplatform.net/speech-to-text/api",
-
+                    IamApiKey = ConfigurationManager.AppSettings["watsonAPIKey"],
+                    ServiceUrl = ConfigurationManager.AppSettings["watsonUrl"]
                 };
-
-           
-
 
                 SpeechToTextService _speechToText = new SpeechToTextService(iamAssistantTokenOptions);
 
-                var streamFromUrl = GetStreamFromUrl(recordingUrl);
+                var streamFromUrl = Utilities.GetStreamFromUrl(recordingUrl);
                 var results =
                     _speechToText.Recognize(audio: streamFromUrl, contentType: "audio/wav", 
                         keywords: new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" }, 
@@ -75,7 +68,7 @@ namespace ivr_webhook.Controllers
 
                 if (results?.Results[0]?.Alternatives[0]?.Confidence != null)
                 {
-                    Log4NetLogger.Info($"Confidence : {results.Results[0].Alternatives[0].Confidence} \n Transcript : {results.Results[0].Alternatives[0].Transcript}");
+                    Log4NetLogger.Info($"IBM Confidence : {results.Results[0].Alternatives[0].Confidence} \n IBM Transcript : {results.Results[0].Alternatives[0].Transcript}");
                     response.Say($"You said, \n {results.Results[0].Alternatives[0].Transcript}. \n And identifying confidence {results.Results[0].Alternatives[0].Confidence * 100} percent");
                 }
                 else
@@ -95,15 +88,7 @@ namespace ivr_webhook.Controllers
             }
         }
 
-        private static Stream GetStreamFromUrl(string url)
-        {
-            byte[] imageData = null;
-
-            using (var wc = new System.Net.WebClient())
-                imageData = wc.DownloadData(url);
-
-            return new MemoryStream(imageData);
-        }
+        
 
 
         //[HttpPost]

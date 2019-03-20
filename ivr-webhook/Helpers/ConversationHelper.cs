@@ -21,7 +21,7 @@ namespace ivr_webhook.Helpers
 
         public static string Bye = "Good Bye";
 
-        public static string ConfirmedVrnQuestion = "You said, \n {0} as V R N, \nTo continue press star on your keypad, \nOr to retry press any other key";
+        public static string ConfirmedVrnQuestion = "You said, \n {0} as V R N, \nTo continue press star on your keypad, \nOr to re enter press any other key";
         public static string ConfirmedVrnMessage = "You confirmed your VRN which is {0}";
 
         public static string ConfirmedVMakerQuestion = "You said, \n {0} as Maker, \nTo continue press star on your keypad, \nOr to retry press any other key";
@@ -43,6 +43,7 @@ namespace ivr_webhook.Helpers
         public static string GetLocationCode = "Enter Location Code via Keypad. \nAnd press the star key when finished.";
         public static string ParkAtSameLocationCode = "To Park at previouse location which is, {0}, press star on your keypad, \nOr, to enter a new location code, press any other key";
         public static string InputUnidentified = "Sorry, We did not recognize your input";
+        public static string VrnNotGathered = "Sorry, We did not recognize your VRN input";
         public static string ParkingLocationCodeInvalid = "Sorry, We did not recognize the parking location code, {0}";
         public static string ConfirmedParkingLocationCodeQuestion = "You requested to Park At, \n {0}, \nParking Location Code. \nTo continue press star on your keypad, \nOr to re enter press any other key";
         public static string FlowSummary = "Summary. \n \nCaller is, {0}. \n Location Code is, {1}. \nV R N is, {2}. \n Number of hours confirmed is, {3}. \nGoodBye";
