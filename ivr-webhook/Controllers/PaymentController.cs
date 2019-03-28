@@ -477,7 +477,7 @@ namespace ivr_webhook.Controllers
                     Session["CvvNumberEntered"] = null;
                     Log4NetLogger.Warn($"Invalid CVV Number {digits}, buy caller {Session["IncomingCallerNumber"] as string}");
                     var response = new VoiceResponse();
-                    var say = new Say(string.Format(ConversationHelper.CardExpiryInvalid, Utilities.AddSpaceBetweenChars(digits)), ConversationHelper.SpeakVoice, 1, ConversationHelper.SpeakLanguage);
+                    var say = new Say(string.Format(ConversationHelper.CvvNumberInvalid, Utilities.AddSpaceBetweenChars(digits)), ConversationHelper.SpeakVoice, 1, ConversationHelper.SpeakLanguage);
                     response.Append(say);
                     response.Redirect(method: HttpMethod.Get, url: Url.ActionUri("GetCvvNumber", "Payment"));
                     return TwiML(response);

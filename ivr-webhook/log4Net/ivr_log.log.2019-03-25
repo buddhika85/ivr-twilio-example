@@ -1,0 +1,73 @@
+2019-03-25 15:55:13,886 INFO MonitoringLogger - Date : 3/25/2019 3:55:13 PM, Caller Id : CAf6ba2e544bdd5e7040dcf5df96946527, Incoming number : +266696687
+2019-03-25 15:55:13,891 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-25 15:55:14,371 INFO MonitoringLogger - Welcome New User
+2019-03-25 15:55:23,112 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-25 15:55:30,683 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-25 15:55:47,072 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE7ff44e6789e6f362c4860f84137acd04
+2019-03-25 15:56:02,015 INFO MonitoringLogger - IBM Confidence : 0.58 
+ IBM Transcript : A. T. T. 
+2019-03-25 15:56:02,015 INFO MonitoringLogger - Gathered VRN A. T. T.  with confidence 0.58
+2019-03-25 16:01:28,076 INFO MonitoringLogger - Date : 3/25/2019 4:01:28 PM, Caller Id : CA863e4d302bf77d804704e39099c3cd9a, Incoming number : +266696687
+2019-03-25 16:01:28,076 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-25 16:01:28,560 INFO MonitoringLogger - Welcome New User
+2019-03-25 16:01:39,329 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-25 16:01:45,708 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-25 16:01:58,786 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE8b1e45795f55f87eb1b56fc5e6b1a09c
+2019-03-25 16:02:06,014 INFO MonitoringLogger - IBM Confidence : 0.52 
+ IBM Transcript : a B. one oh 
+2019-03-25 16:02:06,014 INFO MonitoringLogger - Gathered VRN a B. one oh  with confidence 0.52
+2019-03-25 16:02:20,335 INFO MonitoringLogger - Confirmed VRN a B. one oh 
+2019-03-25 16:02:29,112 INFO MonitoringLogger - Valid Parking Hours request 1
+2019-03-25 16:02:35,030 INFO MonitoringLogger - Number of Parking Hours Input Confirmed - 1
+2019-03-25 16:02:35,506 INFO MonitoringLogger - Hourly Rate - 12
+2019-03-25 16:02:35,506 INFO MonitoringLogger - Parking Cost - 12
+2019-03-25 16:02:35,506 INFO MonitoringLogger - Park Until- 5:02 PM
+2019-03-25 16:02:52,646 INFO MonitoringLogger - Card Number Confirmed - 4
+2019-03-25 16:03:05,088 INFO MonitoringLogger - Card expiry date Confirmed - 7412
+2019-03-25 16:03:09,633 WARN MonitoringLogger - Invalid CVV Number 78, buy caller +266696687
+2019-03-25 16:03:26,034 INFO MonitoringLogger - CVV number Confirmed - 456
+2019-03-25 16:03:26,514 INFO MonitoringLogger - 
+
+Processing the payment
+callSid - CA863e4d302bf77d804704e39099c3cd9a
+incomingCallerNumber - +266696687
+isRegisteredUser - no
+requestedParkingLocation - 1
+currentVrn - a B. one oh 
+hoursConfirmed - 1
+hourlyRate - 12
+parkingCost - 12
+useDefaultCard - 
+userDefaultCardEnding - 
+cardNumberConfirmed - 4
+cardExpiryDateConfirmed - 7412 
+cvvNumberConfirmed - 456 
+retryPaymentCount - 
+End Payment Information, Stating payment process
+
+
+2019-03-25 16:03:26,515 DEBUG DebugLogger - Summary After the end of the Complete Successful FlowCallSid = CA863e4d302bf77d804704e39099c3cd9a 
+IncomingCallerNumber = +266696687 
+IsRegisteredUser = no 
+LastParkingLocation =  
+RequestedParkingLocation = 1 
+DefaultVrn =  
+CurrentVrn = a B. one oh  
+isLimitedParkTime = yes 
+HoursAvailable = 6 
+HoursRequested = 1 
+HoursConfirmed = 1 
+HourlyRate = 12 
+ParkingCost = 12 
+ParkUntil = 5:02 PM 
+UserDefaultCardEnding =  
+UseDefaultCard =  
+CardNumberEntered = 4 
+CardNumberConfirmed = 4 
+CardExpiryDateEntered = 7412 
+CardExpiryDateConfirmed = 7412 
+CvvNumbereEntered = 456 
+CvvNumberConfirmed = 456 
+End of Summary 
+
+2019-03-25 16:03:26,515 INFO MonitoringLogger - Payment Success

@@ -122,6 +122,8 @@ D:\Projects\ivr\ivr-webhook\bin\Microsoft.AI.DependencyCollector.xml
 D:\Projects\ivr\ivr-webhook\bin\Microsoft.AI.WindowsServer.xml
 D:\Projects\ivr\ivr-webhook\bin\Microsoft.AI.Web.xml
 D:\Projects\ivr\ivr-webhook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Projects\ivr\ivr-webhook\obj\Debug\ivr-webhook.csprojResolveAssemblyReference.cache
 D:\Projects\ivr\ivr-webhook\obj\Debug\ivr-webhook.dll
 D:\Projects\ivr\ivr-webhook\obj\Debug\ivr-webhook.pdb
+D:\Projects\ivr\ivr-webhook\obj\Debug\ivr-webhook.csprojAssemblyReference.cache
+D:\Projects\ivr\ivr-webhook\obj\Debug\ivr-webhook.csproj.CoreCompileInputs.cache
+D:\Projects\ivr\ivr-webhook\obj\Debug\ivr-webhook.csproj.CopyComplete

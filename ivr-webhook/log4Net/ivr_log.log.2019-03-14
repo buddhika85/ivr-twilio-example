@@ -1,0 +1,22 @@
+2019-03-14 22:39:41,244 INFO MonitoringLogger - Date : 3/14/2019 10:39:41 PM, Caller Id : CA5a9b7fd74a2843e95293230e73fb01b2, Incoming number : +266696687
+2019-03-14 22:39:41,250 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-14 22:39:41,811 INFO MonitoringLogger - Welcome New User
+2019-03-14 22:39:52,887 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-14 22:39:57,272 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-14 22:40:11,621 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/RE44bbcd639685467f320971e59b4f0d6c
+2019-03-14 22:40:22,779 INFO MonitoringLogger - IBM Confidence : 0.79 
+ IBM Transcript : a 
+2019-03-14 22:40:22,779 INFO MonitoringLogger - Gathered VRN a  with confidence 0.79
+2019-03-14 22:41:00,406 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REd87fea94d7ed19e92a27f86d01a3440f
+2019-03-14 22:41:04,143 INFO MonitoringLogger - IBM Confidence : 0.31 
+ IBM Transcript : A. P. P. 
+2019-03-14 22:41:04,143 INFO MonitoringLogger - Gathered VRN A. P. P.  with confidence 0.31
+2019-03-14 22:41:36,252 INFO MonitoringLogger - Date : 3/14/2019 10:41:36 PM, Caller Id : CA1cb71eda0969b5803078fdf1ccec2139, Incoming number : +266696687
+2019-03-14 22:41:36,257 INFO MonitoringLogger - +266696687 - Is Registered - False
+2019-03-14 22:41:36,810 INFO MonitoringLogger - Welcome New User
+2019-03-14 22:41:43,204 DEBUG DebugLogger - relativeToAbsolute - /LocationCode/OnLocationCodeEntered?digits=1
+2019-03-14 22:41:49,684 INFO MonitoringLogger - Location Code Input Confirmed - 1
+2019-03-14 22:42:02,570 DEBUG DebugLogger - IBM - https://api.twilio.com/2010-04-01/Accounts/ACdfe342ddbecf65b044a7e098180a75e3/Recordings/REb77533d59514c84ab52911493c6688f5
+2019-03-14 22:42:09,504 INFO MonitoringLogger - IBM Confidence : 0.63 
+ IBM Transcript : A. P. one 
+2019-03-14 22:42:09,504 INFO MonitoringLogger - Gathered VRN A. P. one  with confidence 0.63

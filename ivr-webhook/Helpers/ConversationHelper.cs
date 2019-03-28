@@ -74,6 +74,7 @@ namespace ivr_webhook.Helpers
         public static string CardExpiryInvalid = "Sorry, The card expiry date you provided which is, \n{0}, \nis invalid.";
         public static string GetCvvNumber = "Please enter 3 digit CVV number, via Keypad. \nAnd press the star key when finished.";
         public static string CvvNumberConfirm = "You provided, \n{0}, as the CVV number. \nTo confirm and continue press star on your keypad, \nOr to re enter press any other key";
+        public static string CvvNumberInvalid = "Sorry, The CVV number you provided which is, \n{0}, \nis invalid.";
         public static string ProcessingPayment = "Please wait a few seconds as we are process the payment with your confirmed card details.";
         public static string PaymentComplete = "Thank you. \nPayment successful. \nYou can park until, {0}. \nGood Bye";
         public static string PaymentUnsuccessful = "Sorry, Your card payment unsuccessful. \nTo retry, press the star on your keypad, \nOr to end the call press any other key .";

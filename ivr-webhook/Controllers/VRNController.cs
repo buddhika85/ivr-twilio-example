@@ -262,6 +262,8 @@ namespace ivr_webhook.Controllers
 
 
         //// new IBM watson changes
+        /// https://cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-models#models
+        /// 
         public ActionResult VrnRecorded(BodyData bodyData)
         {
             try
@@ -284,9 +286,9 @@ namespace ivr_webhook.Controllers
                 var streamFromUrl = Utilities.GetStreamFromUrl(recordingUrl);
                 var results =
                     _speechToText.Recognize(audio: streamFromUrl, contentType: "audio/wav",
-                        //keywords: new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" },
-                        keywords: new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "zero" },
-                        keywordsThreshold: 0.5f, model: "en-US_NarrowbandModel");
+                        keywords: new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" },
+                        //keywords: new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "zero" },
+                        keywordsThreshold: 0.5f, model: "en-GB_NarrowbandModel");   // "en-US_NarrowbandModel"
 
 
                 if (results?.Results[0]?.Alternatives[0]?.Confidence != null)

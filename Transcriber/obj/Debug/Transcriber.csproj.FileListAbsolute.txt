@@ -2,3 +2,5 @@ D:\Projects\ivr\Transcriber\bin\Debug\Transcriber.dll
 D:\Projects\ivr\Transcriber\bin\Debug\Transcriber.pdb
 D:\Projects\ivr\Transcriber\obj\Debug\Transcriber.dll
 D:\Projects\ivr\Transcriber\obj\Debug\Transcriber.pdb
+D:\Projects\ivr\Transcriber\obj\Debug\Transcriber.csprojAssemblyReference.cache
+D:\Projects\ivr\Transcriber\obj\Debug\Transcriber.csproj.CoreCompileInputs.cache
