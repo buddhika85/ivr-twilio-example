@@ -88,7 +88,7 @@ namespace ivr_webhook.Controllers
             }
         }
 
-        
+
 
 
         //[HttpPost]
@@ -105,8 +105,8 @@ namespace ivr_webhook.Controllers
         //        }
 
         //        var payloadUrl = addOns.results.ibm_watson_speechtotext.payload[0].url;
-        //        var accountSid = "a";
-        //        var apiKey = "a";
+        //        var accountSid = ConfigurationManager.AppSettings["twillioSid"];
+        //        var apiKey = ConfigurationManager.AppSettings["twillioApiKey"];
 
         //        var reqCredentials = Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(accountSid + ":" + apiKey));
         //        var request = (HttpWebRequest)WebRequest.Create(payloadUrl);
